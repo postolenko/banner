@@ -45,126 +45,14 @@ body {
     min-height: 100vh;
 }
 
-header {
-    flex: 0 0 auto;
-    -webkit-flex: 0 0 auto;
-}
-
 .content {
     flex: 1 0 auto;
     -webkit-flex: 1 0 auto;
 }
 
-footer {
-    flex: 0 0 auto;
-    -webkit-flex: 0 0 auto;
-}
-
-::-webkit-input-placeholder {color:#555555;}
-::-moz-placeholder          {color:#555555;}
-:-moz-placeholder           {color:#555555;}
-:-ms-input-placeholder      {color:#555555;}
-
-input,
-textarea,
-button,
-select,
-a,
-img {
-    outline: none;
-}
-
-select {
-    -webkit-appearance: none;
-    appearance: none;
-    -moz-appearance;
-    text-indent: 0.01px;
-    text-overflow: "";
-}
-
-*::-ms-expand { display: none; }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-input {
-    -webkit-appearance: none;
-    -moz-appearance
-}
-
-button {
-    -webkit-appearance: none;
-    -moz-appearance
-}
-
-textarea {
-    resize: none;
-    overflow: auto;
-    -webkit-appearance: none;
-    -moz-appearance;
-}
-
-input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
-input::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
-input:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
-input:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
-input:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
-input:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
-
-textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
-textarea::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
-textarea:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
-textarea:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
-textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
-textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
-textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
-textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
-
-
 /*-------------------------------------------*/
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
-
-section {
-    position: relative;
-    padding: 10px 0;
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-p {
-
-}
-
-a {
-
-}
-
-li {
-
-}
 
 img {
     outline: none;
@@ -180,22 +68,6 @@ a:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -209,6 +81,8 @@ textarea:focus {
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
+
+/*-- Banner --*/
 
 .banner {
     display: flex;
@@ -299,11 +173,234 @@ textarea:focus {
 
 }
 
+/*-- /Banner --*/
 
-/*-------------------------------------------*/
-/* ----- FOOTER ------ */
-/*-------------------------------------------*/
+/*-- Banner 2 --*/
 
-footer {
-    padding: 1px 0;
+.banner_descript_2 {
+    text-align: left;
 }
+
+.banner_descript_2 h2:nth-child(1) {
+     padding-right: 0;
+}
+
+.double_text {
+    position: relative;
+}
+
+.double_text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 104px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.double_text h2.dark_title {
+    background: #D7DCE0;
+    background: -webkit-linear-gradient(to bottom, #D7DCE0 16%, #F5F5F5 25%, #7f8081 100%);
+    background: -moz-linear-gradient(to bottom, #D7DCE0 16%, #F5F5F5 25%, #7f8081 100%);
+    background: linear-gradient(to bottom, #D7DCE0 16%, #F5F5F5 25%, #7f8081 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+    text-shadow: 0 7px 10px rgba(0, 0, 2, .11);
+}
+
+.double_text h2.front_title {
+    background: #503012;
+    background: -webkit-linear-gradient(to top, #503012 0%, #A77027 30%, #F7A93B 100%);
+    background: -moz-linear-gradient(to top, #503012 0%, #A77027 30%, #F7A93B 100%);
+    background: linear-gradient(to top, #503012 0%, #A77027 30%, #F7A93B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 3;
+}
+
+.double_text h2.back_title {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #f0f0f4;
+    z-index: 2;
+}
+
+.two_cols_banner {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    padding-left: 240px;
+    margin-top: -7px;
+}
+
+.two_cols_banner > div:nth-child(1) {
+    padding-right: 30px;
+}
+
+.two_cols_banner h3 {
+    padding-top: 49px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 1;
+    color: #504239;
+}
+
+.two_cols_banner h3 .gradient {
+    background: #EBB71B;
+    background: -webkit-linear-gradient(to bottom, #EBB71B 0%, #E47402 100%);
+    background: -moz-linear-gradient(to bottom, #EBB71B 0%, #E47402 100%);
+    background: linear-gradient(to bottom, #EBB71B 0%, #E47402 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.price_wrapp {
+    position: relative;
+}
+
+.price_wrapp p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 119px;
+    line-height: 1;
+}
+
+.price_back {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    color: #f0f0f4;
+    z-index: 2;
+}
+
+.price {
+    background: #503012;
+    background: -webkit-linear-gradient(to top, #503012 0%, #A77027 30%, #F7A93B 100%);
+    background: -moz-linear-gradient(to top, #503012 0%, #A77027 30%, #F7A93B 100%);
+    background: linear-gradient(to top, #503012 0%, #A77027 30%, #F7A93B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 3;
+}
+
+.price_mark {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 1;
+    color: #50463f;
+}
+
+.price_mark .sq {
+    font-size: 39px;
+    position: relative;
+    top: -22px;
+    right: -5px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .double_text h2 {
+        font-size: 70px;
+    }
+
+    .price_wrapp p {
+        font-size: 90px;
+    }
+
+    .price_mark {
+        font-size: 49px;
+    }
+
+    .price_mark .sq {
+        font-size: 31px;
+        top: -17px;
+    }
+
+    .two_cols_banner > div:nth-child(1) {
+        padding-right: 18px;
+    }
+
+    .two_cols_banner h3 {
+        padding-top: 45px;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .double_text h2 {
+        font-size: 50px;
+    }
+
+    .price_wrapp p {
+        font-size: 74px;
+    }
+
+    .price_mark {
+        font-size: 39px;
+    }
+
+    .price_mark .sq {
+        font-size: 26px;
+        top: -15px;
+    }
+
+    .two_cols_banner {
+        padding-left: 40px;
+    }
+
+    .two_cols_banner h3 {
+        padding-top: 39px;
+        font-size: 38px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .banner_descript_2 h2:nth-child(1) {
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .double_text h2 {
+        font-size: 34px;
+    }
+
+    .two_cols_banner {
+        padding-left: 0;
+    }
+
+    .price_wrapp p {
+        font-size: 60px;
+    }
+
+    .price_mark {
+        font-size: 29px;
+    }
+
+    .price_mark .sq {
+        font-size: 23px;
+        top: -11px;
+    }
+
+    .two_cols_banner h3 {
+        padding-top: 29px;
+        font-size: 25px;
+    }
+
+}
+
+/*-- /Banner 2 --*/
